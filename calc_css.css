@@ -1,0 +1,70 @@
+@font-face {
+	font-family: 'pixell';
+	src: url(/Fonts/PixeloidSans-mLxMm.ttf);
+}
+body{ 
+background-color: #27374D;
+}
+
+.container {
+display: grid;
+grid-template-columns: auto auto auto;
+padding: 10px;
+background-color:#9DB2BF;
+gap: 3px;;
+height: 30em;
+width: 25em; 
+left: 50%;
+top:55%; 
+position:absolute;
+transform: translate(-50%, -50%);
+border-radius:1em;
+}
+
+.box {
+background-color: whitesmoke;
+border: 1px solid black; 
+padding: 10px;
+font-size: 2em;
+text-align:center; 
+}
+.box {
+transition: .5s ease ; 
+
+}
+
+.box:hover {
+border-radius: 10px; 
+background-color: rgb(133, 133, 133);
+}
+
+
+#box{
+grid-column-start: 1; 
+grid-column-end: 4; 
+
+}
+
+#box16 {
+grid-column-start: 1; 
+grid-column-end: 4; 
+}
+
+#head{
+	font-family: 'pixell', sans-serif;
+	color:white;
+	text-align: center;
+}
+
+@media screen and (max-width:682px) {
+    .container{
+        height: 30em;
+        width: 25em;    
+    }
+}
+@media screen and (max-width:443px) {
+    .container{
+        height: 27em;
+        width: 15em;    
+    }
+}
